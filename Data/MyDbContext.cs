@@ -6,6 +6,8 @@ namespace WinFormsApp2.Data
     public class MyDbContext : DbContext
     {
         public DbSet<MixedZoneSteelGroup> MixedZoneSteelGroups { get; set; } = null!;
+        public DbSet<TmixedZoneSteelGroupAudit> TMixedZoneSteelGroupAudit { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
